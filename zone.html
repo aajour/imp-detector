@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 18px;
+        height: 100%;
+        overflow: hidden;
+      }
+      .container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+      .buttons {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .textField {
+        font-size: 18px;
+        width: 30%;
+        margin-top: 10px;
+      }
+      .btn {
+        font-size: 15px;
+      }
+      .red {
+        color: red;
+      }
+      .green {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span id="message" class="red">No Impression counted</span>
+      <div>
+        <label>Zone ID:</label>
+        <input class="textField" placeholder="Zone ID" id="zoneId" />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="okBtn">Load Zone</button>
+        <button id="clearBtn">Clear</button>
+      </div>
+    </div>
+    <script id="jsScript"></script>
+    <script src="./dom.js"></script>
+  </body>
+</html>
