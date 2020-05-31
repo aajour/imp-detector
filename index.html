@@ -12,7 +12,7 @@
       .inputs {
         margin: 20px;
       }
-      #zoneContainer {
+      #outerZoneContainer {
         margin: 0 auto;
         background-color: skyblue;
         height: 200px;
@@ -31,14 +31,13 @@
       <button id="setBtn">Set</button>
     </div>
     <span>Hint: you can change the size manually from the bottom right </span>
-    <div id="zoneContainer">
+    <div id="outerZoneContainer">
       <embed width="100%" height="100%" type="text/html" src="./zone.html" />
     </div>
     <script>
       const height = document.getElementById('height');
       const width = document.getElementById('width');
       const setBtn = document.getElementById('setBtn');
-      const contDiv = document.getElementById('zoneContainer');
       setBtn.addEventListener('click', function () {
         contDiv.style.width = `${width.value}px`;
         contDiv.style.height = `${height.value}px`;

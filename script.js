@@ -1,5 +1,3 @@
-const ImpressionMessage = document.getElementById('message');
-var impressionCounter = 0;
 
 !(function () {
   return function t(e, r, n) {
@@ -3725,11 +3723,7 @@ var impressionCounter = 0;
           t && o('Error while performing xhr', t);
         }
         e.exports = function (t) {
-          if (t.includes('impression')) {
-            impressionCounter++;
-            ImpressionMessage.textContent = `${impressionCounter} Impression sent`;
-            ImpressionMessage.className = 'green';
-          }
+  
           if ((window.navigator || {}).sendBeacon)
             return window.navigator.sendBeacon(t);
           n(
